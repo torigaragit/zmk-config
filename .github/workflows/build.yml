@@ -23,11 +23,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-build-
 
-      # build.yml の抜粋
-      - name: ZMK Action Build
-        uses: zmkfirmware/zmk-action-build@main
+      - name: ZMK Build Action
+        uses: zmkfirmware/zmk-build-action@main
         with:
           board: nice_nano_v2
           shield: my_test_keyboard_left
-          config_path: config # configフォルダの中に west.yml や各ファイルがあることを確認
-          
+          config_path: config
