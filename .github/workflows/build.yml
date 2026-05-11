@@ -25,7 +25,7 @@ jobs:
 
       # build.yml の抜粋
       - name: ZMK Build Action
-        uses: zmkfirmware/zmk-build-action@v3
+        uses: zmkfirmware/zmk-action-build@v3
         with:
           board: nice_nano_v2
           shield: my_test_keyboard_left
