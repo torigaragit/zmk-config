@@ -24,7 +24,7 @@ jobs:
             ${{ runner.os }}-build-
 
       # build.yml の抜粋
-      - name: ZMK Build Action
+      - name: ZMK Action Build
         uses: zmkfirmware/zmk-action-build@main
         with:
           board: nice_nano_v2
